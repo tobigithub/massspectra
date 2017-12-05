@@ -7,6 +7,11 @@ Created on Wed Oct 25 14:16:37 2017
 """
 
 import pandas as pd
+
+#needed for stable seeded accuracy
+import numpy as np
+np.random.seed(12345)
+
 from keras.models import Sequential 
 from keras.layers import Dense, Dropout
 import matplotlib.pyplot as plt
